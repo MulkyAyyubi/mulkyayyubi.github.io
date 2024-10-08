@@ -1,3 +1,6 @@
+---
+import { ad } from "simple-icons-astro"
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,9 +23,12 @@
         
          <section class=" px-[300px] flex justify-end flex-col-reverse 2xl:flex-row items-center">
             <div>
-                <!-- <img class="absolute top-[200px] left-[-280px]" src="img/topography 4.png" alt="vector" draggable="false"> -->
-                <h1 class="text-[126px] font-bold leading-[130px] relative w-fit pt-[50px]">Olá <br> Amigos!</h1>
-                <p class="pt-11 max-w-[500px] text-xl font-light leading-[28px]">Ola, I'm Mulky Ayyubi 👋🏼 . A Front-End Developer 
+                <h1 class="text-[126px] font-bold leading-[130px] relative w-fit pt-[50px]" id="rotate">Olá <br> Amigos!
+                    <!-- <span>Hello <br> Friend!</span>
+                    <span>こんにちわ</span> -->
+
+                </h1>
+                <p class="pt-11 max-w-[500px] text-xl font-light leading-[28px]">Ola, <span class="font-bold text-[#FF7A00]">I'm Mulky Ayyubi</span> 👋🏼 . A Front-End Developer 
                     from Indonesia  passionate about building <br>
                     accessible webs that users love and likes <br>
                     to dive into the Multimedia world.</p>
@@ -37,7 +43,7 @@
 
 
 <section class="flex justify-center pb-[64px]">
-    <div class="[--gap:100px] max-w-[1000px] overflow-hidden [mask:linear-gradient(90deg,transparent,white_20%,white_80%,transparent)]">
+    <div class="[--gap:100px] max-w-[1200px] overflow-hidden [mask:linear-gradient(90deg,transparent,white_20%,white_80%,transparent)]">
         <div class="flex gap-[--gap] w-max animate-scroll">
             <img class="size-36" src="img/html.svg" alt="">
             <img class="size-36" src="img/css.svg" alt="">
@@ -55,18 +61,38 @@
     </div>
 </section>
 
-<section class="px-[300px] pt-[80px] relative overflow-hidden">
-    <!-- <img class="absolute -right-48 " src="img/something.svg" alt="something"> -->
-    <h1 class="text-[80px] font-bold leading-[100px] relative w-fit pt-[50px]"><span class="bg-[#EF7404]">Featured</span> <br> Work</h1>
-    <div class="grid grid-cols-2 just gap-x-[100px] gap-y-[200px] [&>*:nth-child(odd)]:translate-y-24">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
-        <img class="outline-3 outline-dashed outline-offset-4 w-full aspect-video block" src="img/rectangle.png" alt="">
+<section class="px-[300px] pt-[80px] pb-[250px] relative overflow-hidden">
+    <img class="absolute -right-48 " src="img/something.svg" alt="something">
+    <h1 class="text-[60px] font-bold text-center w-full leading-[70px] relative w-fit py-[50px]"><span class="bg-[#EF7404]">Featured</span> Work</h1>
+    <div class="">
+        <!-- <img class="absolute top-[400px] left-[-280px]" src="img/topography 4.png" alt="vector" draggable="false"> -->
+        <div class="pb-32 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+            <img class="relative inset-0 rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/cileungtruck.png" alt="">
+        </div>
+        <div class="pb-32 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+            <img class="relative inset-0 rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/joycat.png" alt="">
+        </div>
+        <div class="group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+            <img class="relative inset-0 rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/aviaventura.png" alt="">
+        </div>
+        <!-- <img class="absolute -bottom-28 -right-32" src="img/bigellipse.svg" alt=""> -->
     </div>
 </section>
+
+    <img class="object-contain" src="img/scribbly.svg" alt="">
+    <div class="text-center leading-[80px]">
+        <h1 class="text-[60px] font-bold w-full pt-[130px]">The <span class="bg-[#EF7404]">MulkyMedia</span> Showcase</h1>
+        <p class="text-[20px] font-light">Welcome to my showcase!  A section filled with all my multimedia creations.</p>
+    </div>
+
+    <hr class="mx-48 mt-10 mb-32">
+
+    <!-- <footer>
+        <img class=" w-full h-[500px]" src="img/footer.png" alt="">
+    </footer> -->
+    
+
+
 
 </body>
 </html>

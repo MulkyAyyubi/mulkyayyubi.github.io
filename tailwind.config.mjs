@@ -6,6 +6,9 @@ export default {
 	theme: {
 		extend: {
 			keyframes: {
+				rotate : {
+					
+				},
 				scroll: {
 					"100%": {
 						transform: "translate(calc(-50% - var(--gap) / 2))"
