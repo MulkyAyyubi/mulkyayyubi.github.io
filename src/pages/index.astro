@@ -1,9 +1,5 @@
 ---
-import { Adobephotoshop } from "simple-icons-astro"
-import { Adobeillustrator } from "simple-icons-astro"
-import { Adobeaftereffects } from "simple-icons-astro"
-import { Adobepremierepro } from "simple-icons-astro"
-import { Blender } from "simple-icons-astro"
+import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, Blender, Github, X, Instagram } from "simple-icons-astro"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,12 +16,16 @@ import { Blender } from "simple-icons-astro"
 </head>
 
 <body class="bg-zinc-900 text-white font-['Merriweather_Sans']">
-     <nav class="py-11 pb-[120px]  pl-[300px]">
+     <nav class="container mx-auto px-[110px] pt-10 pb-40 flex justify-between ">
         <p><a class="text-2xl" href="">mulkyayyubi.</a>
-        
+            <div class="flex gap-5">
+                <Instagram />
+                <X />
+                <Github />
+            </div>
     </nav>
         
-         <section class=" px-[300px] flex justify-end flex-col-reverse 2xl:flex-row items-center">
+         <section class="container mx-auto px-[110px] flex flex-col-reverse 2xl:flex-row items-center">
             <div>
                 <h1 class="text-[126px] font-bold leading-[130px] relative w-fit pt-[50px]" id="rotate">Olá <br> Amigos!
                     <!-- <span>Hello <br> Friend!</span>
@@ -46,7 +46,7 @@ import { Blender } from "simple-icons-astro"
     <hr class="mx-48 mt-10 mb-32">
 
 
-<section class="flex justify-center pb-[64px]">
+<section class="container mx-auto flex justify-center py-[64px]">
     <div class="[--gap:100px] max-w-[1200px] overflow-hidden [mask:linear-gradient(90deg,transparent,white_20%,white_80%,transparent)]">
         <div class="flex gap-[--gap] w-max animate-scroll">
             <img class="size-36" src="img/html.svg" alt="">
@@ -65,8 +65,8 @@ import { Blender } from "simple-icons-astro"
     </div>
 </section>
 
-<section class="px-[300px] pt-[80px] pb-[250px] relative overflow-hidden">
-    <img class="absolute -right-48 " src="img/something.svg" alt="something">
+<img class="absolute -right-48 " src="img/something.svg" alt="something">
+<section class="container mx-auto px-[110px] pt-[80px] pb-[250px] relative overflow-hidden">
     <h1 class="text-[60px] font-bold text-center w-full leading-[70px] relative py-[50px]"><span class="bg-[#EF7404]">Featured</span> Work</h1>
     <div class="">
         <!-- <img class="absolute top-[400px] left-[-280px]" src="img/topography 4.png" alt="vector" draggable="false"> -->
@@ -82,7 +82,7 @@ import { Blender } from "simple-icons-astro"
         <div class="group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
             <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/kodeinbook.png" alt="">
         </div>
-        <img class="absolute -bottom-28 -right-32" src="img/bigellipse.svg" alt="">
+        <!-- <img class="absolute -bottom-28 -right-32" src="img/bigellipse.svg" alt=""> -->
     </div>
 </section>
 
