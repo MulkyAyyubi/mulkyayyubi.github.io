@@ -16,18 +16,18 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
 </head>
 
 <body class="bg-zinc-900 text-white font-['Merriweather_Sans']">
-     <nav class="container mx-auto px-[110px] pt-10 pb-40 flex justify-between ">
+     <nav class="container mx-auto md:px-[110px] px-7 pt-10 pb-40 flex justify-between ">
         <p><a class="text-2xl" href="">mulkyayyubi.</a>
             <div class="flex gap-5">
-               <a href="https://www.instagram.com/mo._.oolky/"><Instagram /></a>
-               <a href="https://x.com/mulkyayb"><X /></a>
-               <a href="https://github.com/MulkyAyyubi"><Github /></a>
+               <a target="_blank" href="https://www.instagram.com/mo._.oolky/"><Instagram /></a>
+               <a target="_blank" href="https://x.com/mulkyayb"><X /></a>
+               <a target="_blank" href="https://github.com/MulkyAyyubi"><Github /></a>
             </div>
     </nav>
         
          <section class="container mx-auto px-[110px] flex flex-col-reverse 2xl:flex-row items-center">
             <div>
-                <h1 class="text-[126px] font-bold leading-[130px] relative w-fit pt-[50px]" id="rotate">Olá <br> Amigos!
+                <h1 class="text-[126px] font-bold leading-[130px] relative w-fit pt-[40px]" id="rotate">Olá <br> Amigos!
                     <!-- <span>Hello <br> Friend!</span>
                     <span>こんにちわ</span> -->
 
@@ -36,10 +36,10 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
                     from Indonesia  passionate about building <br>
                     accessible webs that users love and likes <br>
                     to dive into the Multimedia world.</p>
-                <a class="text-base font-normal pt-[70px] w-fit relative after:left-0 after:bg-[#FF7A00] after:h-1 after:absolute after:right-0 after:-bottom-1 after:rounded-md block" href="">CONTACT ME</a>
+                <a class="text-base font-normal pt-[60px] w-fit relative after:left-0 after:bg-[#FF7A00] after:h-1 after:absolute after:right-0 after:-bottom-1 after:rounded-md block" href="">CONTACT ME</a>
             </div>
             <div class="relative -mt-36 ml-12">
-                <img src="img/foto.svg" alt="">
+                <img class=" hidden md:block " src="img/foto.svg" alt="">
                 <img class="absolute left-24 bottom-24" src="img/Ellipse 2.png" alt="" draggable="false">
             </div>
          </section>
@@ -73,16 +73,24 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
     <div class="">
         <!-- <img class="absolute top-[400px] left-[-280px]" src="img/topography 4.png" alt="vector" draggable="false"> -->
         <div class="mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
-            <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/cileungtruck.png" alt="">
+            <a target="_blank" href="https://muhammadmulkyayyubi.kodeintekno.com/tugas-pekanan-3/">
+                <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/cileungtruck.png" alt="">
+            </a> 
         </div>
         <div class="mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
-            <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/joycat.png" alt="">
+            <a target="_blank" href="https://mulky-asat.vercel.app/">
+                <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/joycat.png" alt="">
+            </a>
         </div>
         <div class="mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
-            <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/aviaventura.png" alt="">
+            <a target="_blank" href="https://aviaventura.vercel.app/">
+                <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/aviaventura.png" alt="">
+            </a>
         </div>
         <div class="group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
-            <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/kodeinbook.png" alt="">
+            <a target="_blank" href="https://muhammadmulkyayyubi.kodeintekno.com/tugas-pekanan-4/">
+                <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/kodeinbook.png" alt="">
+            </a>
         </div>
         <!-- <img class="absolute -bottom-28 -right-32" src="img/bigellipse.svg" alt=""> -->
     </div>
@@ -98,41 +106,111 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
     
     <hr class="mx-48 mt-10 mb-32">
     
-    <div class="flex w-full justify-center gap-14 pb-[160px]">
-        <Adobephotoshop class="size-28"/>
-        <Adobeillustrator class="size-28"/>
-        <Adobeaftereffects class="size-28"/>
-        <Adobepremierepro class="size-28"/>
-        <Blender class="size-28"/>
+    <div class="flex w-full justify-center gap-14 pb-[160px]" id="navShi">
+        <div data-project="ps" class="outline rounded-xl outline-offset-8">
+            <Adobephotoshop class="size-28" />
+        </div>
+        <div data-project="ai">
+            <Adobeillustrator class="size-28" />
+        </div>
+        <div data-project="ae">
+            <Adobeaftereffects class="size-28" />
+        </div>
+        <div data-project="pr">
+            <Adobepremierepro class="size-28" />
+        </div>
+        <div data-project="bl">
+            <Blender class="size-28" />
+        </div>
     </div>
-    <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44">
-        <img class="w-[260px]" src="img/mohammedali.png" alt="">
-        <h1 class="text-3xl font-bold pt-8">Magazine</h1>
-        <p class="text-center text-base font-light pt-4">I took the idea of making a Muhammad Ali magazine as a <br> remembrance and also because he got into my head </p>
-    </div>
-    <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44">
-        <img class="w-[260px]" src="img/climate.png" alt="">
-        <h1 class="text-3xl font-bold pt-8">Infographic</h1>
-        <p class="text-center text-base font-light pt-4">I parcitipated in an infographic poster competition hosted <br> by <span class="font-bold text-[#FF7A00]"> OLIMPEDIA </span> with the theme of climate change. </p>
-    </div>
-    <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44">
-        <img class="w-[400px]" src="img/dakwah1.png" alt="">
-        <h1 class="text-3xl font-bold pt-8">Dakwah Poster</h1>
-        <p class="text-center text-base font-light pt-4">I was assigned to make a dakwah poster for a school assignment. <br> This was one of my many assignments from school.</p>
-    </div>
-    <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44">
-        <img class="w-[400px]" src="img/dakwah2.png" alt="">
-        <h1 class="text-3xl font-bold pt-8">Dakwah Poster</h1>
-        <p class="text-center text-base font-light pt-4">I was assigned to make another dakwah poster for the final <br> assignment of the photoshop class meeting.
+    <div class="grid grid-cols-2" id="itemShi">
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[260px]" src="img/mohammedali.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Magazine</h1>
+            <p class="text-center text-base font-light pt-4">I took the idea of making a Muhammad Ali magazine as a <br> remembrance and also because he got into my head </p>
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[260px]" src="img/climate.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Infographic</h1>
+            <p class="text-center text-base font-light pt-4">I parcitipated in an infographic poster competition hosted <br> by <span class="font-bold text-[#FF7A00]"> OLIMPEDIA </span> with the theme of climate change. </p>
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[400px]" src="img/dakwah1.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Dakwah Poster</h1>
+            <p class="text-center text-base font-light pt-4">I was assigned to make a dakwah poster for a school assignment. <br> This was one of my many assignments from school.</p>
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[400px]" src="img/dakwah2.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Dakwah Poster</h1>
+            <p class="text-center text-base font-light pt-4">I was assigned to make another dakwah poster for the final <br> assignment of the photoshop class meeting.
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 hidden" data-project="ai">
+            <img class="w-[400px]" src="img/dakwah3.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Dakwah Poster</h1>
+            <p class="text-center text-base font-light pt-4">I was assigned to make another dakwah poster for the final <br> assignment of the Illustrator class meeting.
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[280px]" src="img/vespa.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Vespa Poster</h1>
+            <p class="text-center text-base font-light pt-4">This was my first photoshop assignment from school which you <br> can see is not very good but I'm still proud of.
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 hidden" data-project="ai">
+            <img class="w-[500px] h-[350px]" src="img/house.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Mansion</h1>
+            <p class="text-center text-base font-light pt-4">This was my first illustrator assignment from school. It was to <br> input colours into the mansion neatly
+        </div>
+        <div class="flex flex-col items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 " data-project="ps">
+            <img class="w-[400px]" src="img/nasgor.png" alt="">
+            <h1 class="text-3xl font-bold pt-8">Advertisement</h1>
+            <p class="text-center text-base font-light pt-4">The design i made here was also an assignment which was then <br> inputted to After Effects to be animated.
+        </div>
+        <div class="flex flex-col col-span-2 items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 hidden" data-project="ae">
+            <iframe class="w-[500px] h-[300px]" src="https://drive.google.com/file/d/1ORW1zpbG8uFjlWLlqqv-PI7npxMWyGz_/preview"></iframe>
+            <h1 class="text-3xl font-bold pt-8">Advertisement</h1>
+            <p class="text-center text-base font-light pt-4">Remember the design that i said was inputted to after effects <br> to be animated? Well, this is the video.
+        </div>
+        <div class="flex flex-col col-span-2 items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 hidden" data-project="bl">
+            <iframe class="w-[500px] h-[300px]" src="https://drive.google.com/file/d/19e9nxB1XNSTd4rHgzkam8ybzpIqbAlLC/preview"></iframe>
+            <h1 class="text-3xl font-bold pt-8">Masjid Al-Ayyubi</h1>
+            <p class="text-center text-base font-light pt-4">This is a 3D Blender assignment of making a masjid of our own <br> which took me some times to finish.
+        </div>
+        <div class="flex flex-col col-span-2 items-center mx-auto bg-[#303030] w-[600px] py-9 rounded-xl mb-44 hidden" data-project="pr">
+            <iframe class="w-[500px] h-[300px]" src="https://drive.google.com/file/d/16I1rpwGcT85w6_Nan9yFnTB3ZXz6sePm/preview"></iframe>
+            <h1 class="text-3xl font-bold pt-8">My Activity</h1>
+            <p class="text-center text-base font-light pt-4">A Premier Pro assignment of making a video for a school profile <br> and "A Day In My Life" for our final multimedia assignment
+        </div>
     </div>
 </section>
 
+<script>
+    const navShi = document.querySelectorAll("#navShi [data-project]");
+    const itemShi = document.querySelectorAll("#itemShi [data-project]");
 
-    <!-- <footer>
-        <img class=" w-full h-[500px]" src="img/footer.png" alt="">
-    </footer> -->
-    
+    navShi.forEach((singleNavShi) => {
+        singleNavShi.addEventListener("click", () => {
+            navShi.forEach((singleNavShi) => singleNavShi.classList.remove("outline", "rounded-xl", "outline-offset-8"))
 
+            singleNavShi.classList.add("outline", "rounded-xl", "outline-offset-8")
+            
+
+            itemShi.forEach((singleItemShi) => singleItemShi.classList.add("hidden"));
+            document.querySelectorAll(`#itemShi [data-project=${singleNavShi.dataset.project}]`).forEach((singleSelectedShi) => singleSelectedShi.classList.remove("hidden"));
+        })
+    })
+</script>
+
+
+ <footer class="overflow-hidden">
+    <img class=" w-full" src="img/footer.png" alt="">
+    <p class="bg-[#242424] text-6xl md:text-6xl font-bold md:pl-[250px] px-5 pt-[90px] pb-[120px] leading-[70px]">Curious to collaborate or <br>
+        discuss a project? <br>
+        <a class="text-[#FF7A00]" target="blank" href="mailto:@mulkyalayyubi.com">Let's Talk</a>
+    </p>
+    <div class="animate-scroll flex [--gap:12px] gap-[--gap] [--direction:reverse] bg-[#242424] w-max pb-3">
+        <p class="font-light">Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You •</p>
+        <p class="font-light">Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You • Thank You •</p>
+    </div>
+ </footer>
 
 
 </body>

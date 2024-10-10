@@ -13,7 +13,7 @@ export default {
 					"100%": {
 						transform: "translate(calc(-50% - var(--gap) / 2))"
 					}
-				}
+				},
 			},
 			animation: {
 				scroll: "scroll var(--duration, 20s) linear var(--direction, forwards) infinite"
