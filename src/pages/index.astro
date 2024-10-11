@@ -178,22 +178,6 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
     </div>
 </section>
 
-<script>
-    const navShi = document.querySelectorAll("#navShi [data-project]");
-    const itemShi = document.querySelectorAll("#itemShi [data-project]");
-
-    navShi.forEach((singleNavShi) => {
-        singleNavShi.addEventListener("click", () => {
-            navShi.forEach((singleNavShi) => singleNavShi.classList.remove("outline", "rounded-xl", "outline-offset-8"))
-
-            singleNavShi.classList.add("outline", "rounded-xl", "outline-offset-8")
-            
-
-            itemShi.forEach((singleItemShi) => singleItemShi.classList.add("hidden"));
-            document.querySelectorAll(`#itemShi [data-project=${singleNavShi.dataset.project}]`).forEach((singleSelectedShi) => singleSelectedShi.classList.remove("hidden"));
-        })
-    })
-</script>
 
 
  <footer class="overflow-hidden">
@@ -211,3 +195,20 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
 
 </body>
 </html>
+
+<script>
+    const navShi = document.querySelectorAll("#navShi [data-project]");
+    const itemShi = document.querySelectorAll("#itemShi [data-project]");
+
+    navShi.forEach((singleNavShi) => {
+        singleNavShi.addEventListener("click", () => {
+            navShi.forEach((singleNavShi) => singleNavShi.classList.remove("outline", "rounded-xl", "outline-offset-8"))
+
+            singleNavShi.classList.add("outline", "rounded-xl", "outline-offset-8")
+            
+
+            itemShi.forEach((singleItemShi) => singleItemShi.classList.add("hidden"));
+            document.querySelectorAll(`#itemShi [data-project=${singleNavShi.dataset.project}]`).forEach((singleSelectedShi) => singleSelectedShi.classList.remove("hidden"));
+        })
+    })
+</script>
