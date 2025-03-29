@@ -1,5 +1,6 @@
 ---
 import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, Blender, Github, X, Instagram } from "simple-icons-astro"
+import "../styles/global.css"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
 </head>
 
 <body class="bg-zinc-900 text-white font-['Merriweather_Sans']">
-     <nav class="container mx-auto md:px-[110px] px-7 pt-10 pb-40 flex justify-between ">
+     <nav class="container mx-auto md:px-[110px] px-7 pt-10 pb-64 flex justify-between">
         <p><a class="text-2xl" href="">mulkyayyubi.</a>
             <div class="flex gap-5">
                <a target="_blank" href="https://www.instagram.com/mo._.oolky/"><Instagram /></a>
@@ -24,15 +25,15 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
             </div>
     </nav>
         
-<section class="container mx-auto pl-14 pr-14 justify-center text-center">
+<section class="scroll container mx-auto pl-14 pr-14 justify-center text-center pb-40">
     <h1 class="text-[90px] md:text-[160px] font-bold leading-[80px] md:leading-[130px] pt-[100px] md:pt-[80px]" id="rotate">Olá Amigos!</h1>
     <p class="pt-20 pb-20 px-60 text-base sm:text-lg md:text-xl font-light leading-[28px]">Ola, <span class="font-bold text-[#FF7A00]">I'm Mulky Ayyubi</span> 👋🏼 . A Front-End Developer from Indonesia  passionate about building accessible webs that users love and likes to dive into the Multimedia world when bored.</p>
     <a class="text-base font-normal px-6 py-3 bg-[#FF7A00] hover:bg-orange-700" target="blank" href="https://web.whatsapp.com/">CONTACT ME</a>
 </section>
 
-<hr class="mx-5 md:mx-48 mt-32 mb-36">
+<!-- <hr class="scroll mx-5 md:mx-48 mt-32 mb-36"> -->
 
-<div class="py-60">
+<section class="scroll mt-52 mb-60">
     <div>
         <h1 class="text-[40px] md:text-[60px] font-bold text-center w-full leading-[70px] relative py-12"><span class="bg-[#EF7404]">Technologies</span> Learnt</h1>
     </div>
@@ -58,24 +59,29 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="container mx-auto px-[20px] md:px-[110px] pt-[80px] pb-[100px] md:pb-0 relative overflow-hidden">
+<section class="scroll container mx-auto px-[20px] md:px-[110px] pt-[80px] pb-[100px] md:pb-0 relative overflow-hidden">
     <h1 class="text-[40px] md:text-[60px] font-bold text-center w-full leading-[70px] relative py-[50px]"><span class="bg-[#EF7404]">Featured</span> Work</h1>
     <div>
-        <div class="mb-[70px] md:mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+        <div class="scroll b-[70px] md:mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+            <a target="_blank" href="https://www.kodein.sch.id/">
+                <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/kodeinweb.png" alt="">
+            </a>
+        </div>
+        <div class="scroll b-[70px] md:mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
             <a target="_blank" href="https://mulky-asat.vercel.app/">
                 <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/joycat.png" alt="">
             </a>
         </div>
-        <div class="mb-[70px] md:mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
+        <div class="scroll mb-[70px] md:mb-48 group rounded-xl overflow-hidden [mask:linear-gradient(0deg,transparent,black_70%)]">
             <a target="_blank" href="https://aviaventura.vercel.app/">
                 <img class="relative inset-0 size-full rounded-lg aspect-video object-cover block group-hover:scale-110 transition-transform duration-300" src="img/aviaventura.png" alt="">
             </a>
         </div>
         <!-- <img class="absolute -bottom-28 -right-32" src="img/bigellipse.svg" alt=""> -->
-</div>
-</div>
+    </div>
+</section>
 
 <!-- <img class="object-contain" src="img/scribbly.svg" alt=""> -->
 
@@ -206,7 +212,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('.scroll, footer');
 hiddenElements.forEach((el) => observer.observe(el));
-
 </script>
