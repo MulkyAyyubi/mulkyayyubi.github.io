@@ -14,7 +14,7 @@ import { Adobephotoshop, Adobeillustrator, Adobeaftereffects, Adobepremierepro, 
     <title>mulkyayyubi</title>
 </head>
 
-<body class="bg-zinc-900 text-white font-['Merriweather_Sans']" id="hidden">
+<body class="bg-zinc-900 text-white font-['Merriweather_Sans']">
      <nav class="container mx-auto md:px-[110px] px-7 pt-10 pb-40 flex justify-between ">
         <p><a class="text-2xl" href="">mulkyayyubi.</a>
             <div class="flex gap-5">
@@ -199,9 +199,9 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting) {
-            entry.target.classList.add('.show');
+            entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('.show')
+            entry.target.classList.remove('show')
         }
     });
 });
